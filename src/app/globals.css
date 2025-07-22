@@ -1,5 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
 @import "tailwindcss";
 @import "tw-animate-css";
+
+/* Now begin your CSS rules */
+.custom-underline {
+  text-decoration: underline;
+  text-underline-offset: 12px;
+  text-decoration-thickness: 3px;
+}
+
+.underline-rounded { position: relative; }
+/* ...and so on */
+
+
+.underline-rounded::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0;
+  bottom: -4px;
+  height: 4px;
+  border-radius: 3px;
+  background: currentColor;
+  width: 100%;
+  z-index: 1;
+  opacity: 1;
+  pointer-events: none;
+  transition: background 0.2s;
+}
+
+.intel-one-mono {
+  font-family: "Intel One Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400; /* You can change to 300, 500, etc. */
+  font-style: normal;
+}
+
+
+/* Intel One Mono usage example */
+.intel-one-mono-unique {
+  font-family: var(--font-intel-mono);
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-intel {
+  font-family: var(--font-intel-mono);
+}
+
+:root {
+  --font-intel-mono: "Intel One Mono", monospace;
+  --font-winky-rough: "Winky Rough", cursive;
+}
+
+
+body {
+  font-family: var(--font-winky-rough);
+}
+
+
+/* ... rest of your variables and css */
+
 
 @custom-variant dark (&:is(.dark *));
 
@@ -110,13 +171,4 @@
   --sidebar-accent-foreground: oklch(0.985 0.001 106.423);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.553 0.013 58.071);
-}
-
-@layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
 }
