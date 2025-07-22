@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-export function useActiveSection(sectionIds:any[]) {
+export function useActiveSection(sectionIds: string[]) {
   const [active, setActive] = useState(sectionIds[0]);
   useEffect(() => {
     const handleScroll = () => {

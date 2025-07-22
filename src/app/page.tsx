@@ -10,7 +10,6 @@ import {
   Twitter,
 } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
-import { useState } from "react";
 import { projects } from "@/projects";
 import AnimatedStack from "@/components/AnimatedStack";
 import { Input } from "@/components/ui/input";
@@ -35,7 +34,8 @@ export default function Home() {
     delaySpeed: 1500,
   });
 
-  const [projectList, setProjectList] = useState(projects);
+  const projectList = projects;
+
   type ContactFormData = {
     name: string,
     email: string,
@@ -74,7 +74,7 @@ export default function Home() {
         >
           <div className="h-[80%] md:h-full flex flex-col items-start justify-center">
             <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-4">
-              <div className="text-2xl sm:text-3xl w-75 sm:w-150 flex justify-start">Hi, I'm</div> <div className="w-75 sm:w-150 flex justify-start"> Manoj Kumar G S </div>
+              <div className="text-2xl sm:text-3xl w-75 sm:w-150 flex justify-start">Hi, I am</div> <div className="w-75 sm:w-150 flex justify-start"> Manoj Kumar G S </div>
             </h1>
 
             <h2 className="text-blue-600 dark:text-cyan-600 text-2xl sm:text-3xl mb-2 font-semibold">
@@ -204,9 +204,9 @@ export default function Home() {
 
               {/* Card 3: Open to Work */}
               <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 hover:shadow-blue-400 dark:hover:shadow-cyan-400 transition-shadow duration-200">
-                <h3 className="text-xl font-semibold mb-2 text-blue-600 dark:text-cyan-600">Let’s Work Together</h3>
+                <h3 className="text-xl font-semibold mb-2 text-blue-600 dark:text-cyan-600">Lets Work Together</h3>
                 <p className="text-sm text-gray-600 dark:text-gray-300 font-semibold">
-                  I love exploring the tech field and building web apps. I'm open to freelance projects, internships, and job roles. I can build fast, responsive, and custom websites for your business — focused on real-world needs and smooth user experiences.
+                  I love exploring the tech field and building web apps. I am open to freelance projects, internships, and job roles. I can build fast, responsive, and custom websites for your business — focused on real-world needs and smooth user experiences.
                 </p>
               </div>
             </div>
@@ -242,7 +242,7 @@ export default function Home() {
             "
                 >
                   <div className="flex justify-center items-center h-16 w-16 mb-2">
-                    <img
+                    <Image
                       src={skill.src}
                       alt={skill.alt}
                       width={64}
@@ -380,7 +380,7 @@ export default function Home() {
               Contact Me
             </h2>
             <p className="text-center text-gray-600 dark:text-gray-300 mb-10 font-semibold">
-              I'm open to freelance work, collaborations, or full-time roles. Feel free to reach out — I’ll get back to you soon!
+              I am open to freelance work, collaborations, or full-time roles. Feel free to reach out — I’ll get back to you soon!
             </p>
 
             <Card className="max-w-3xl mx-auto bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">

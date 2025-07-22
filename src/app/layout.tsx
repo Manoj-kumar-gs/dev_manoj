@@ -27,17 +27,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Intel+One+Mono:ital,wght@0,300..700;1,300..700&display=swap"
-          rel="stylesheet"
-        />
       </head>
       <body
-        className={`${inter.variable} ${playfair.variable} antialiased font-inter bg-white text-black dark:bg-[#0f172a] dark:text-white transition-all duration-200 ease-in-out`}
+        className={`${inter.variable} ${playfair.variable} antialiased bg-white text-black dark:bg-[#0f172a] dark:text-white transition-all duration-200 ease-in-out`}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <Navbar />

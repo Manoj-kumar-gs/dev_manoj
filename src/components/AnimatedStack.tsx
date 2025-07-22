@@ -1,7 +1,7 @@
 "use client";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 
-export default function AnimatedStack({ stacks }: { stacks: any[] }) {
+export default function AnimatedStack({ stacks }: { stacks: string[] }) {
   const [text] = useTypewriter({
     words: stacks,
     loop: true,

@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -28,35 +27,6 @@
   transition: background 0.2s;
 }
 
-.intel-one-mono {
-  font-family: "Intel One Mono", monospace;
-  font-optical-sizing: auto;
-  font-weight: 400; /* You can change to 300, 500, etc. */
-  font-style: normal;
-}
-
-
-/* Intel One Mono usage example */
-.intel-one-mono-unique {
-  font-family: var(--font-intel-mono);
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.font-intel {
-  font-family: var(--font-intel-mono);
-}
-
-:root {
-  --font-intel-mono: "Intel One Mono", monospace;
-  --font-winky-rough: "Winky Rough", cursive;
-}
-
-
-body {
-  font-family: var(--font-winky-rough);
-}
 
 
 /* ... rest of your variables and css */
