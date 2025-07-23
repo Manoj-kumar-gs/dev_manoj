@@ -376,7 +376,7 @@ export default function Home() {
       <section id="contact" className="min-h-screen flex justify-center items-center w-full">
         <div className="py-10 px-6 bg-gray-200 dark:bg-gray-700 rounded-lg text-gray-800 dark:text-gray-200 w-full xl:w-[90%]">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl font-bold text-center text-blue-600 dark:text-cyan-600 mb-8 cursor-pointer">
+            <h2 className="text-3xl font-bold text-center text-blue-600 dark:text-cyan-600 mb-8">
               Contact Me
             </h2>
             <p className="text-center text-gray-600 dark:text-gray-300 mb-10 font-semibold">
@@ -444,7 +444,7 @@ export default function Home() {
                     )}
                   </div>
 
-                  <Button type="submit" disabled={isSubmitting}>
+                  <Button type="submit" className="cursor-pointer w-full" disabled={isSubmitting}>
                     {isSubmitting ? "Sending..." : "Send Message"}
                   </Button>
                 </form>

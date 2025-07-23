@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/next"
 import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
