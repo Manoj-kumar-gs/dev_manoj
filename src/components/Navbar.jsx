@@ -168,7 +168,7 @@ export default function Navbar() {
 
       {/* Mobile Dropdown Menu */}
       {menuOpen && (
-        <div className="md:hidden px-4 pb-4 space-y-4">
+        <div className="md:hidden flex flex-col items-center justify-center px-4 pb-4 space-y-4 w-fit">
           {navItems.map((item) => (
             <a
               key={item.label}
